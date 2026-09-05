@@ -259,6 +259,11 @@ Please head over our dedicated Docker [wiki](https://github.com/thinkst/opencana
 ### With Ansible
 
 Please head over to our forked repository for an Ansible OpenCanary role over [here](https://github.com/thinkst/ansible-role-opencanary).
+
+## Analytics sidecar
+
+An optional SQLite-based correlation, risk-scoring, alerting, and reporting sidecar is available as `opencanary-analytics`. It reads the existing JSONL logger output without changing protocol modules. See [`docs/analytics.rst`](docs/analytics.rst) and the non-secret examples in [`analytics/`](analytics/).
+
 ## Documentation
 
 * The [Wiki](https://github.com/thinkst/opencanary/wiki) contains our FAQ.

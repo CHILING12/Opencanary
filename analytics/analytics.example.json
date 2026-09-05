@@ -1,0 +1,15 @@
+{
+  "input": "/var/tmp/opencanary.log",
+  "db": "/var/lib/opencanary-analytics/events.sqlite3",
+  "hmac_env": "OPENCANARY_ANALYTICS_HMAC_KEY",
+  "window_seconds": 300,
+  "alert_threshold": 30,
+  "retention_days": 30,
+  "whitelist": ["127.0.0.1/32", "::1/128"],
+  "sensitive_paths": ["/admin", "/login", "/wp-login", "/.env"],
+  "risk": {
+    "connection_threshold": 20,
+    "brute_force_threshold": 5,
+    "threat_ips": []
+  }
+}
