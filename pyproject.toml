@@ -53,6 +53,9 @@ dependencies = [
     "gitpython>=3.1.51",
 ]
 
+[project.scripts]
+opencanary-analytics = "opencanary_analytics.cli:main"
+
 [project.urls]
 Homepage = "http://www.thinkst.com/"
 "Bug Tracker" = "https://github.com/thinkst/opencanary/issues"
